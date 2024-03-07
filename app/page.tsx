@@ -9,7 +9,10 @@ import Attribution from "./ui components/attribution";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-lg min-w-[200px] bg-neutral-white sm:my-16 rounded-xl sm:p-7">
+    <main
+      role="main"
+      className="mx-auto max-w-lg min-w-[200px] bg-neutral-white sm:my-16 rounded-xl sm:p-7"
+    >
       <RecipeImage src="/image-omelette.jpeg" alt="Recipe App" />
       <div className="sm:p-0 p-7">
         <RecipeTitle heading={data.title} paragraph={data.description} />
@@ -21,6 +24,6 @@ export default function Home() {
         <Nutrition data={data.nutrition} />
         <Attribution />
       </div>
-    </div>
+    </main>
   );
 }
